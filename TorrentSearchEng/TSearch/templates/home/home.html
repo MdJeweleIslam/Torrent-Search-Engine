@@ -32,8 +32,8 @@
         <a class="nav-link disabled" href="#">Donate</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <form class="form-inline my-2 my-lg-0" method="GET">
+      <input class="form-control mr-sm-2" type="text" name="q" placeholder="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
@@ -46,8 +46,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <div class="container">
-    	<h1>Torrent Search Result</h1>
-
+    	<h3>{{ error }}</h3>
+    	<h3>{{ success }}</h3>
     		<a href="{{ li1 }}">{{ na1 }}</a></br>
     		<a href="{{ li2 }}">{{ na2 }}</a></br>
     		<a href="{{ li3 }}">{{ na3 }}</a></br>
@@ -76,6 +76,7 @@
     		<a href="{{ li26 }}">{{ na26 }}</a></br>
     		<a href="{{ li27 }}">{{ na27 }}</a></br>
     		<a href="{{ li28 }}">{{ na28 }}</a></br>
+    	}
 
     </div>
 </body>
