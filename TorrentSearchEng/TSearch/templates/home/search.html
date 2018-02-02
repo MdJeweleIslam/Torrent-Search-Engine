@@ -32,10 +32,6 @@
         <a class="nav-link disabled" href="#">Donate</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
   </div>
 </nav>
 
@@ -46,9 +42,24 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <div class="container">
-    	<h1>Torrent Search Result</h1>
-
-    		<a href="{{ li1 }}">{{ na1 }}</a></br>
+    	<div class="row">
+    		<div class="col">
+    			<div class="col-sm-6 col-12">
+		    		<form method="GET">
+		    			<input class="form-control" placeholder="Enter the Keywords" type="text" name="q"><br>
+					    <div class="form-row text-center">
+					    	<div class="col-12">
+					        	<button type="submit" class="btn btn-outline-success">Submit</button>
+					    	</div>
+					 </div>
+		    		</form>
+		    	</div>
+		    </div>
+		</div>
+    </div>
+    <div class="container">
+    	<h3>Search Keyword is {{ qs }}</h3>
+    	<a href="{{ li1 }}">{{ na1 }}</a></br>
     		<a href="{{ li2 }}">{{ na2 }}</a></br>
     		<a href="{{ li3 }}">{{ na3 }}</a></br>
     		<a href="{{ li4 }}">{{ na4 }}</a></br>
@@ -76,7 +87,6 @@
     		<a href="{{ li26 }}">{{ na26 }}</a></br>
     		<a href="{{ li27 }}">{{ na27 }}</a></br>
     		<a href="{{ li28 }}">{{ na28 }}</a></br>
-
     </div>
 </body>
 </html>

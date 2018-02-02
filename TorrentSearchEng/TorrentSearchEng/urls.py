@@ -16,9 +16,10 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from TSearch.views import SearchHome
+from TSearch.views import SearchHome, tsearch
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^', SearchHome, name="home"),
+    url(r'^$', SearchHome, name="home"),
+    url(r'^search/', tsearch, name="search"),
 ]
